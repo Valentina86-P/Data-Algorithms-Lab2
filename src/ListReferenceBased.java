@@ -119,6 +119,13 @@ public class ListReferenceBased implements ListInterface
     head = null;
     numItems = 0;
   } // end removeAll
+  
+  public void displayList() {
+	  
+  }
+  public String listLongest() {
+	  return"";
+  }
 
 
 } // end ListReferenceBased
