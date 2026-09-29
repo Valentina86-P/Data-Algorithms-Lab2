@@ -121,11 +121,27 @@ public class ListReferenceBased implements ListInterface
   } // end removeAll
   
   public void displayList() {
+	  for (Node curr = head; curr != null; curr = curr.getNext() )
 	  
-  }
+	  System.out.println(curr.getItem() );
+	  } 
   public String listLongest() {
-	  return"";
+	  if(head == null) {
+	  return null;
   }
+  Node curr = head;
+  String longest = (String) curr.getItem();
+  
+  while (curr != null) {
+      String item = (String) curr.getItem();
+      if (item.length() > longest.length()) {
+          longest = item;
+      }
+      curr = curr.getNext();
+  }
+
+  return longest;
+}
 
 
 } // end ListReferenceBased
