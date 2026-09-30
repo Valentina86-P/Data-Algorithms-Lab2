@@ -121,10 +121,14 @@ public class ListReferenceBased implements ListInterface
   } // end removeAll
   
   public void displayList() {
-	  for (Node curr = head; curr != null; curr = curr.getNext() )
-	  
+	  for
+	  (Node curr = head; curr != null; curr = curr.getNext() )
+	  {
 	  System.out.println(curr.getItem() );
-	  } 
+	  }
+  }
+
+
   public String listLongest() {
 	  if(head == null) {
 	  return null;
